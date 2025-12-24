@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Minimalist Palette */
+  --background: 0 0% 100%;       /* White */
+  --foreground: 215 27% 17%;     /* Dark Slate */
+  
+  --primary: 215 27% 17%;        /* Dark Slate (same as foreground for high contrast action) */
+  --primary-foreground: 0 0% 100%; 
+  
+  --secondary: 210 40% 96.1%;    /* Very light gray for backgrounds */
+  --secondary-foreground: 222 47% 11.2%;
+  
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215 16% 47%;
+  
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222 47% 11.2%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 215 27% 17%;
+  
+  --radius: 0.25rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/10 selection:text-primary;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply font-normal tracking-tight;
+  }
+}
+
+/* Custom utility for subtle transitions */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+
+/* Hide Replit dev banner/watermark */
+[data-replit-banner],
+[class*="replit-banner"],
+[class*="replit-watermark"],
+.dev-banner,
+[style*="Made with Replit"],
+.replit-banner,
+.replit-watermark {
+  display: none !important;
+  visibility: hidden !important;
+}

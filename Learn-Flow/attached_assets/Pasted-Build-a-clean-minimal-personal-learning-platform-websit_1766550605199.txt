@@ -1,0 +1,99 @@
+Build a clean, minimal personal learning platform website.
+
+The website is meant for students to access structured learning resources (PDFs).
+It should feel calm, serious, and expandable — not like a marketing website.
+
+Core Features
+1. Authentication
+
+Users can Sign Up and Log In
+
+Fields: name, email, password
+
+After login, users land on the main dashboard
+
+Only logged-in users can download PDFs
+
+Logged-out users should see the landing page but not access downloads
+
+2. Landing Page (After Login)
+
+The landing page should be minimal and structured.
+
+Hero Section
+
+Title: “A Structured Learning Space”
+
+Subtitle: “Notes, roadmaps, and learning resources — built slowly and thoughtfully.”
+
+No hype words. No claims. Just clarity.
+
+Resources Section
+
+Section title: “Available Resources”
+
+Each resource should appear as a clean card
+
+First card:
+
+Title: “Web3 From Zero — Cohort-Style Roadmap”
+
+Description:
+“A 16-week, fundamentals-first roadmap covering blockchain basics, Ethereum, smart contracts, security, DeFi, NFTs, and real-world assets.”
+
+Button: “Download PDF”
+
+This section must be designed so that more resources can be added later without redesigning the page.
+
+3. About Section (Bottom of the Website)
+
+At the bottom, add a calm, professional About the Creator section — similar in tone to founder sections on serious educational platforms.
+
+Layout:
+
+Photo on one side
+
+Text on the other
+
+Content:
+
+Name: Aayushi Bansal
+
+Short description (write it cleanly, not dramatically):
+
+“I’m a student exploring technology, systems, and how complex ideas can be broken down clearly.
+This platform is a personal effort to document what I’m learning — slowly, honestly, and in public — so others starting from zero don’t feel lost.”
+
+Add one more line:
+
+“This space will grow over time as I add more learning resources across different domains.”
+
+Keep the tone grounded. No exaggeration. No self-praise.
+
+4. Design Guidelines
+
+Very minimal UI
+
+Light background
+
+Neutral colors
+
+Plenty of spacing
+
+Professional typography
+
+No animations, no gradients, no emojis
+
+Mobile responsive
+
+The website should feel quiet, serious, and intentional.
+
+5. PDF Access
+
+PDFs should be downloadable only by logged-in users
+
+Use protected routes
+
+Structure the system so more PDFs can be added easily later
+
+Build everything so it runs smoothly and cleanly without unnecessary features.
